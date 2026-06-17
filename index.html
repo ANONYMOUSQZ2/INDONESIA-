@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Indonesia - Control Center</title>
+    <style>
+        /* Pengaturan Dasar */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #050000;
+            background-image: 
+                radial-gradient(at 50% 0%, rgba(255, 0, 0, 0.18) 0px, transparent 50%),
+                linear-gradient(180deg, #050000 0%, #120000 100%);
+            color: #ff3333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding-bottom: 60px;
+        }
+
+        /* Konten Utama */
+        .container {
+            max-width: 1000px;
+            width: 92%;
+            text-align: center;
+            padding: 40px 10px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 0 0 15px #ff0000, 0 0 30px #ff0000;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #ff0000;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            text-shadow: 0 0 5px #000;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* Grid Kartu APK */
+        .app-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .card {
+            background: rgba(10, 0, 0, 0.93);
+            border: 2px solid #ff0000;
+            border-radius: 12px;
+            padding: 30px 25px;
+            width: 100%;
+            max-width: 450px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.15);
+            transition: all 0.3s ease;
+            text-align: left;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 35px rgba(255, 0, 0, 0.4);
+            background: #170000;
+        }
+
+        /* Desain Ikon Aplikasi */
+        .icon-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .app-icon {
+            width: 95px;
+            height: 95px;
+            border-radius: 18px;
+            border: 2px solid #ff0000;
+            padding: 5px;
+            background: #000;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+            object-fit: cover;
+        }
+
+        .card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+            color: #fff;
+            text-shadow: 0 0 5px #ff0000;
+            text-align: center;
+        }
+
+        /* Sesi Fitur & Kegunaan */
+        .feature-title {
+            font-size: 0.95rem;
+            color: #ff0000;
+            margin-top: 15px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-bottom: 1px dashed #ff0000;
+            padding-bottom: 2px;
+        }
+
+        .card ul {
+            list-style: none;
+            margin-bottom: 15px;
+        }
+
+        .card ul li {
+            font-size: 0.85rem;
+            color: #f0e0e0;
+            line-height: 1.6;
+            margin-bottom: 6px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .card ul li::before {
+            content: "☠";
+            position: absolute;
+            left: 0;
+            color: #ff0000;
+            font-size: 0.75rem;
+        }
+
+        /* Tombol Unduh */
+        .btn {
+            display: inline-block;
+            width: 100%;
+            background: transparent;
+            color: #ff0000;
+            border: 2px solid #ff0000;
+            padding: 14px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            transition: all 0.2s ease;
+            margin-top: 15px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background: #ff0000;
+            color: #000;
+            box-shadow: 0 0 15px #ff0000;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Anonymous Indonesia</h1>
+            <p>[ BLACK HAT MALWARE & INFILTRATION CONTROL ]</p>
+        </header>
+
+        <div class="app-grid">
+            
+            <!-- APK 1: Desk Anonymous Control -->
+            <div class="card">
+                <div class="icon-container">
+                    <img src="u3.png" alt="Desk Anonymous" class="app-icon" onerror="this.src='https://placehold.co'">
+                </div>
+                <h3>Desk Anonymous Control</h3>
+                
+                <div class="feature-title">Operasi Penetrasi Target:</div>
+                <ul>
+                    <li>Mengambil alih kontrol penuh grafis (GUI) perangkat target tanpa konfirmasi visual.</li>
+                    <li>Infiltrasi tingkat tinggi melompati pengawasan AV (Anti-Virus Bypass Protocol).</li>
+                    <li>Eksekusi tersembunyi (Hidden Background Control) tanpa memicu kecurigaan korban.</li>
+                    <li>Memaksa koneksi terminal jarak jauh secara konstan (Persistent Connection).</li>
+                </ul>
+
+                <div class="feature-title">Fitur Eksploitasi & Malicious:</div>
+                <ul>
+                    <li>Remote Access Trojan (RAT) dengan konsol kontrol berlatensi sangat rendah.</li>
+                    <li>Injeksi baris perintah (Terminal Command) langsung ke direktori root target.</li>
+                    <li>Akses pembacaan enkripsi internal, penyalinan data massal, dan manipulasi sistem berkas.</li>
+                    <li>Bypass restriksi jaringan lokal dan firewall melalui enkapsulasi port P2P.</li>
+                    <li>Fitur Keylogger terintegrasi untuk merekam penekanan tombol dan input teks target.</li>
+                    <li>Sesi pembajakan sesi clipboard untuk menyalin token atau data otentikasi aktif.</li>
+                </ul>
+
+                <!-- GANTI LINK DI BAWAH INI DENGAN USERNAME TELEGRAM PRIBADI ANDA -->
+                <a href="https://t.me/anonymousqz2_bot" class="btn" target="_blank">EXECUTE TARGET</a>
+            </div>
+
+            <!-- APK 2: Server Anonymous APK -->
+            <div class="card">
+                <div class="icon-container">
+                    <img src="u3.png" alt="Server Anonymous" class="app-icon" onerror="this.src='https://placehold.co'">
+                </div>
+                <h3>Server Anonymous APK</h3>
+                
+                <div class="feature-title">Fungsi Spying & Surveillance:</div>
+                <ul>
+                    <li>Menanamkan modul pelacakan koordinat GPS real-time dengan akurasi satelit militer.</li>
+                    <li>Penyadapan berkala log aktivitas, status daya, identitas jaringan, dan lalu lintas data.</li>
+                    <li>Operasi penyamaran total (Stealth Phantom Mode) — menyembunyikan ikon dari menu utama.</li>
+                    <li>Modul intersepsi latar belakang yang otomatis berjalan saat perangkat di-reboot.</li>
+                </ul>
+
+                <div class="feature-title">Fitur Eksploitasi & Destruktif:</div>
+                <ul>
+                    <li>Pengiriman log koordinat lokasi target secara otomatis ke server pengendali.</li>
+                    <li>Trigger payload eksekusi jarak jauh menggunakan instruksi SMS terenkripsi.</li>
+                    <li>Instant Corporate/System Wipe Out — Penghapusan seluruh partisi memori korban secara instan.</li>
+                    <li>Persistent Backdoor Booting — Berjalan otomatis sebagai layanan sistem inti yang tidak bisa dimatikan.</li>
+                    <li>Dump SMS & Call Logs — Menyadap semua pesan keluar-masuk serta riwayat panggilan target.</li>
+                    <li>Pemicu pembunyian sirine darurat atau penguncian layar total untuk menyandera perangkat.</li>
+                </ul>
+
+                <!-- GANTI LINK DI BAWAH INI DENGAN USERNAME TELEGRAM PRIBADI ANDA -->
+                <a href="https://t.me/anonymousqz2_bot" class="btn" target="_blank">DEPLOY SERVER</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+  </html>
